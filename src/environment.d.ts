@@ -22,3 +22,7 @@ declare module "*.svg" {
   const value: string;
   export = value;
 }
+
+interface HTMLCanvasElement {
+  captureStream(frameRate: number): MediaStream;
+}
